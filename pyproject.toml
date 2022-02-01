@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "binhexgenerator"
+version = "0.1.0"
+description = ""
+authors = ["Viktor Jonsson <viktor.jonsson@cellmax.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/vjons/binhexgenerator"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.scripts]
+cli_command_name = 'binhexgenerator:binhexgenerator'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+PyQt5 = "^5.15.6"
+numpy = "^1.22.1"
+matplotlib = "^3.5.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+ptpython = "^3.0.20"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
